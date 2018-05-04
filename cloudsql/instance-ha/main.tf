@@ -5,10 +5,11 @@ terraform {
 provider "google" {}
 
 resource "google_sql_database_instance" "cloudsql_master" {
-  name = "${var.cloudsql_master_name}"
+  name   = "${var.cloudsql_master_name}"
   region = "${var.gcp_region}"
 
   database_version = "${var.cloudsql_version}"
+
   settings {
     tier      = "${var.cloudsql_tier}"
     disk_type = "${var.disk_type}"

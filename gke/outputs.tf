@@ -1,4 +1,3 @@
-
 output "kubernetes_api_endpoint" {
   value = "${google_container_cluster.kubernetes_cluster.endpoint}"
 }
