@@ -1,10 +1,18 @@
-variable "region" {
+## Project configuration
+
+# https://www.terraform.io/docs/providers/google/r/sql_database_instance.html
+
+# variable "gcp_project" {
+#   description = "Name of the Google Compute project to use"
+# }
+#
+# variable "gcp_credentials" {
+#   description = "Credentials file to use for accessing Google Compute resources"
+# }
+#
+variable "gcp_region" {
   description = "Google Compute region to use for the DB instances"
   default     = "us-central1"
-}
-
-variable "project" {
-  description = "GCP Project name"
 }
 
 # Cloud SQL variables
@@ -52,6 +60,11 @@ variable "backup_start_time" {
 variable "master_location_preference_zone" {
   description = "Zone in which to create the CloudSQL master instance"
   default     = "us-central1-a"
+}
+
+variable "failover_location_preference_zone" {
+  description = "Additional zone in which to create a failover replice"
+  default     = "us-central1-b"
 }
 
 variable "database_charset" {
