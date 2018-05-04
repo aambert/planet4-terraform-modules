@@ -54,3 +54,7 @@ variable "failover_location_preference_zone" {
   description = "Additional zone in which to create a failover replice"
   default     = "us-central1-b"
 }
+
+variable "database_charset" {
+  default = "utf8mb4"
+}

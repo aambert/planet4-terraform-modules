@@ -6,7 +6,7 @@ provider "google" {}
 
 resource "google_sql_database_instance" "cloudsql_master" {
   name = "${var.cloudsql_master_name}"
-  region = "${var.gcp_region}"
+  region = "${var.region}"
 
   database_version = "${var.cloudsql_version}"
 
@@ -38,5 +38,5 @@ resource "google_sql_database_instance" "cloudsql_master" {
       value = "${var.database_charset}"
     }
   }
-  
+
 }
