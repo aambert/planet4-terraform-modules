@@ -6,6 +6,7 @@ provider "google" {}
 
 resource "google_sql_database_instance" "cloudsql_master" {
   name = "${var.cloudsql_master_name}"
+  project = "${var.project}"
   region = "${var.region}"
 
   database_version = "${var.cloudsql_version}"

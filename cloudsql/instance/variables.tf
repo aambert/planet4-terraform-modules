@@ -3,6 +3,10 @@ variable "region" {
   default     = "us-central1"
 }
 
+variable "project" {
+  description = "GCP Project name"
+}
+
 # Cloud SQL variables
 
 ## Main configuration
