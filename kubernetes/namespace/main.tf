@@ -13,6 +13,7 @@ resource "kubernetes_namespace" "nro" {
     labels {
       application = "${var.application}"
       nro         = "${var.nro}"
+      environment = "${var.environment}"
     }
 
     name = "${var.namespace}"
