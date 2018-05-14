@@ -33,10 +33,7 @@ variable "master_zone" {
 }
 
 variable "additional_zones" {
-  default = [
-    "us-central1-b",
-    "us-central1-c",
-  ]
+  default = []
 }
 
 variable "min_master_version" {
