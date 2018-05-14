@@ -44,6 +44,10 @@ variable "default_pool_name" {
   default = "default-pool"
 }
 
+variable "initial_default_pool_name" {
+  default = "unused"
+}
+
 variable "daily_maintenance_window_start_time" {
   default = "00:00"
 }
