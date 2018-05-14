@@ -18,9 +18,7 @@ variable "admin_username" {
   default = "admin"
 }
 
-variable "admin_password" {
-  default = "00000000000000000"
-}
+variable "admin_password" {}
 
 variable "machine_type" {
   default = "n1-standard-1"
@@ -45,10 +43,6 @@ variable "min_master_version" {
   default = "1.9.7-gke.0"
 }
 
-variable "initial_default_pool_name" {
-  default = "unused-default-pool"
-}
-
 variable "default_pool_name" {
   default = "default-pool"
 }
@@ -61,7 +55,7 @@ variable "project" {
   default = "planet4-production"
 }
 
-variable "env" {
+variable "environment" {
   default = "production"
 }
 
