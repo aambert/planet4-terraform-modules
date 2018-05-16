@@ -6,6 +6,10 @@ variable "release_name" {
   default = "elasticsearch"
 }
 
+variable "namespace" {
+  default = "default"
+}
+
 variable "image_repository" {
   default = "gcr.io/planet-4-151612/elasticsearch"
 }

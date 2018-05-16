@@ -8,6 +8,7 @@ resource "helm_release" "elasticsearch" {
   name       = "${var.release_name}"
   repository = "${var.repository}"
   chart      = "elasticsearch"
+  namespace  = "${var.namespace}"
 
   set {
     name  = "image.repository"
